@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grid-line: rgba(43, 49, 56, 0.5);
+}
+
+.light {
+  --grid-line: rgba(218, 213, 201, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background-color: theme("colors.copper.DEFAULT");
+  color: theme("colors.canvas.DEFAULT");
+}
+
+:focus-visible {
+  outline: 2px solid theme("colors.copper.DEFAULT");
+  outline-offset: 3px;
+}
+
+/* Patrón de cuadrícula reutilizando la variable --grid-line */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+}
+
+.trace-divider {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--grid-line) 15%,
+    var(--grid-line) 85%,
+    transparent
+  );
+}
+
+.node-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: theme("colors.copper.DEFAULT");
+  box-shadow: 0 0 0 4px rgba(198, 128, 61, 0.15);
+}
+
+/* Caja con borde degradado tipo arcoíris, con paletas distintas para modo claro y oscuro */
+.rgb-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.rgb-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 2px;
+  pointer-events: none;
+  background: linear-gradient(
+    120deg,
+    #d63b32,
+    #e08a2e,
+    #2f9e58,
+    #2f7de8,
+    #8b3fe8
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.dark .rgb-card::before {
+  background: linear-gradient(
+    120deg,
+    #ff7ad9,
+    #ffe066,
+    #6dffb3,
+    #6ec8ff,
+    #c69dff
+  );
+}

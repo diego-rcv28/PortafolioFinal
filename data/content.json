@@ -1,0 +1,117 @@
+{
+  "profile": {
+    "name": "Diego Roberto Cantoral Velásquez",
+    "role": "Estudiante de Bachillerato CCLL en Computación",
+    "tagline": "Apasionado por entender la tecnología moderna, su impacto en la sociedad y su aplicación en el desarrollo de software y administración de sistemas.",
+    "location": "Guatemala",
+    "email": "diegorcv28@gmail.com",
+    "github": "https://github.com/diego-rcv28",
+    "photo": ""
+  },
+  "about": "Soy un estudiante de quinto bachillerato CCLL en Computación, con experiencia en desarrollo de aplicaciones y sistemas de gestión. Me interesa aprender y aplicar nuevas tecnologías, especialmente en el ámbito del desarrollo de software y administración de sistemas. Me considero una persona espontanea, con habilidades que me permiten desarrollarme en entornos de trabajo en equipo e independiente, con capacidad de análisis y resolución de problemas. Me gusta estudiar y aprender mas sobre el crecimiento de la tecnología y su impacto en la sociedad, así como también me interesa el desarrollo de aplicaciones móviles y web, y la implementación de soluciones innovadoras que mejoren la vida de las personas.",
+  "timeline": [
+    {
+      "period": "2026 — Actualidad",
+      "title": "Quinto Bachillerato en Computación",
+      "place": "Colegio Salesiano Don Bosco",
+      "description": "Cursando clases como producción de contenidos digitales, programación, administración de sistemas y redes, y desarrollo de aplicaciones móviles y web, bases de datos, entre otras.",
+      "image": ""
+    },
+    {
+      "period": "2026",
+      "title": "Sistema de control de asistencia con QR",
+      "place": "Proyecto Grupal — MediLlegadas",
+      "description": "Diseño y desarrollo de una app multiplataforma (web, Android nativo y iOS) para registrar entradas y salidas de los practicantes mediante un código QR y geolocalización. (Encargado de la parte de desarrollo móvil en Android Studio y XCode en SwiftUI).",
+      "image": ""
+    },
+    {
+      "period": "2026",
+      "title": "Ayuda en Presentación de Proyecto de Grado",
+      "place": "Proyecto Grupal — EduCore (Creador - Pablo Antonio Rodas García)",
+      "description": "Ayuda a la explicación en cuestiones de Backend, Frontend, base de datos y sistema de login, así como la parte de desarrollo móvil y funciones dentro de la app.",
+      "image": ""
+    },
+    {
+      "period": "2026",
+      "title": "Comienzo de desarrollo de aplicaciones móviles y web",
+      "place": "Proyecto Individual - FinanceX",
+      "description": "Desarrollo de aplicación en NETMAUI con el lenguaje C# para un proyecto personal de unidad dentro del Coelgio Salesiano Don Bosco.",
+      "image": ""
+    }
+  ],
+  "skillGroups": [
+    {
+      "category": "Sistemas y Redes",
+      "skills": [
+        "Windows Server",
+        "Administración de sistemas",
+        "Bases de datos SQL Server"
+      ]
+    },
+    {
+      "category": "Desarrollo",
+      "skills": [
+        "C# / .NET MAUI",
+        "Windows Forms",
+        "HTML, CSS y JavaScript",
+        "Kotlin (Android)",
+        "Swift (iOS)"
+      ]
+    },
+    {
+      "category": "Backend y Nube",
+      "skills": [
+        "Firebase Functions (Node.js)",
+        "Firestore",
+        "APIs REST",
+        "Geolocalización"
+      ]
+    },
+    {
+      "category": "Herramientas",
+      "skills": [
+        "Visual Studio",
+        "Visual Studio Code",
+        "Android Studio",
+        "Git"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MediLlegadas",
+      "description": "Sistema de control de asistencia por código QR, con geolocalización para validar que el registro se haga dentro del radio del edificio. Backend en Firebase Functions con Firestore; versiones nativas en Android (Kotlin) e iOS (Swift).",
+      "tags": [
+        "Kotlin",
+        "Swift",
+        "Firebase",
+        "Geolocalización"
+      ],
+      "github": "",
+      "demo": ""
+    },
+    {
+      "name": "FinanceX",
+      "description": "App de escritorio para el control de finanzas personales, construida en .NET MAUI. Permite definir un capital inicial, registrar gastos con descripción y monto, y ver un resumen actualizado en tiempo real.",
+      "tags": [
+        ".NET MAUI",
+        "C#",
+        "Escritorio"
+      ],
+      "github": "",
+      "demo": ""
+    },
+    {
+      "name": "Sistema de Farmacia",
+      "description": "Proyecto integrador escolar: sistema de gestión con módulos de medicamentos, categorías, proveedores, ventas y clientes. Arquitectura por capas en C# y Windows Forms, con SQL Server y generación de reportes en PDF con iText.",
+      "tags": [
+        "C#",
+        "Windows Forms",
+        "SQL Server",
+        "iText"
+      ],
+      "github": "",
+      "demo": ""
+    }
+  ]
+}
