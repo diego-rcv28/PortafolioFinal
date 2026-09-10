@@ -6,7 +6,7 @@
     "location": "Guatemala",
     "email": "diegorcv28@gmail.com",
     "github": "https://github.com/diego-rcv28",
-    "photo": ""
+    "photo": "/profile.png"
   },
   "about": "Soy un estudiante de quinto bachillerato CCLL en Computación, con experiencia en desarrollo de aplicaciones y sistemas de gestión. Me interesa aprender y aplicar nuevas tecnologías, especialmente en el ámbito del desarrollo de software y administración de sistemas. Me considero una persona espontanea, con habilidades que me permiten desarrollarme en entornos de trabajo en equipo e independiente, con capacidad de análisis y resolución de problemas. Me gusta estudiar y aprender mas sobre el crecimiento de la tecnología y su impacto en la sociedad, así como también me interesa el desarrollo de aplicaciones móviles y web, y la implementación de soluciones innovadoras que mejoren la vida de las personas.",
   "timeline": [
@@ -113,5 +113,6 @@
       "github": "",
       "demo": ""
     }
+    
   ]
 }
