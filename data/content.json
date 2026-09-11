@@ -1,6 +1,6 @@
 {
   "profile": {
-    "name": "Diego Roberto Cantoral Velásquez",
+    "name": "Diego Cantoral",
     "role": "Estudiante de Bachillerato CCLL en Computación",
     "tagline": "Apasionado por entender la tecnología moderna, su impacto en la sociedad y su aplicación en el desarrollo de software y administración de sistemas.",
     "location": "Guatemala",
@@ -80,7 +80,7 @@
   "projects": [
     {
       "name": "MediLlegadas",
-      "description": "Sistema de control de asistencia por código QR, con geolocalización para validar que el registro se haga dentro del radio del edificio. Backend en Firebase Functions con Firestore; versiones nativas en Android (Kotlin) e iOS (Swift).",
+      "description": "Sistema de control de asistencia por código QR, con geolocalización para validar que el registro se haga dentro del radio del edificio. Backend en Firebase Functions con Firestore; versiones nativas en Android (Kotlin) e iOS.",
       "tags": [
         "Kotlin",
         "Swift",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Sistema de Farmacia",
-      "description": "Proyecto integrador escolar: sistema de gestión con módulos de medicamentos, categorías, proveedores, ventas y clientes. Arquitectura por capas en C# y Windows Forms, con SQL Server y generación de reportes en PDF con iText.",
+      "description": "Proyecto integrador escolar: sistema de gestión con módulos de medicamentos, proveedores, ventas y clientes. Arquitectura por capas en C# y Windows Forms, con SQL Server y generación de reportes en PDF con iText.",
       "tags": [
         "C#",
         "Windows Forms",
@@ -113,6 +113,35 @@
       "github": "",
       "demo": ""
     }
-    
+  ],
+  "certificates": [
+    {
+      "title": "Cisco Netacad: Introducción a Redes",
+      "issuer": "Cisco Networking Academy",
+      "date": "2026",
+      "image": "/Introduction.png",
+      "link": "https://www.credly.com/badges/d836b263-0ba0-4384-829c-555461517237/public_url"
+    },
+    {
+      "title": "Cisco Netacad: Introducción a la Ciberseguridad",
+      "issuer": "Colegio Salesiano Don Bosco",
+      "date": "2026",
+      "image": "/Seguridad.png",
+      "link": "https://www.credly.com/badges/065029b8-f63a-4b38-a74f-c22aa3abfa42/public_url"
+    },
+    {
+      "title": "IT Essentials",
+      "issuer": "Emisor u Organización",
+      "date": "2025",
+      "image": "/IT.png",
+      "link": "https://www.credly.com/badges/7e65242b-20d8-4c3f-9053-bf1b623444b7/public_url"
+    },
+    {
+      "title": "AWS Academy Graduate - Cloud Foundations - Training Badge",
+      "issuer": "Emisor u Organización",
+      "date": "2026",
+      "image": "/AWS.png",
+      "link": "https://www.credly.com/badges/67689d34-51c6-4455-a2d4-74fd13575e1f/public_url"
+    }
   ]
 }
