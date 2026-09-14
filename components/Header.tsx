@@ -12,7 +12,7 @@ export function Navbar() {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const { bgType, setBgType } = useBackground();
 
-  // Esperar a que el componente esté montado para evitar errores de hidratación
+
   useEffect(() => {
     setMounted(true);
   }, []);
