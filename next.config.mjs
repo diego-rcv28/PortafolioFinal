@@ -2,9 +2,9 @@
 const cspHeader = `
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval';
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' blob: data:;
-    font-src 'self';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    img-src 'self' blob: data: https:;
+    font-src 'self' data: https://fonts.gstatic.com;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
@@ -28,14 +28,14 @@ const securityHeaders = [
     value: 'nosniff',
   },
   {
+    // Resuelve: Configuración Incorrecta Cross-Domain (reemplaza 'https://tu-dominio.com' por tu dominio real si aplica)
+    key: 'Access-Control-Allow-Origin',
+    value: 'https://tu-dominio.com', 
+  },
+  {
     // Mejora adicional de seguridad en navegadores
     key: 'Referrer-Policy',
     value: 'origin-when-cross-origin',
-  },
-  {
-    // Atiende el aviso informativo sobre Directivas de Control de Caché
-    key: 'Cache-Control',
-    value: 'public, max-age=3600, must-revalidate',
   },
 ];
 
