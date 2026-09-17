@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Space_Grotesk, IBM_Plex_Sans, IBM_Plex_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -35,17 +36,20 @@ export const metadata: Metadata = {
   description: content.profile.tagline,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Nonce generado por middleware.ts para esta petición (ver Content-Security-Policy).
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
+
   return (
     <html lang="es" suppressHydrationWarning>
       <body
         className={`${display.variable} ${body.variable} ${mono.variable} ${modern.variable} relative min-h-screen font-body bg-canvas text-ink antialiased transition-colors duration-300`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} nonce={nonce}>
           <BackgroundProvider>
             {/* Menú de navegación flotante superior */}
             <Navbar />

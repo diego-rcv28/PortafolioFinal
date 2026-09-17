@@ -69,7 +69,7 @@ export function Contact() {
             <a
               href={profile.github}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="group flex items-center justify-between rounded-3xl bg-canvas-light/30 dark:bg-canvas/30 p-4 backdrop-blur-md transition-all duration-300 hover:bg-canvas-light/50 dark:hover:bg-canvas/50 hover:translate-x-1 shadow-sm"
             >
               <span className="font-mono text-xs font-semibold text-ink-light dark:text-ink">GitHub</span>

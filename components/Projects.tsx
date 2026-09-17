@@ -150,7 +150,7 @@ export function Projects() {
                       <a
                         href={project.github}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                         className="rounded-full bg-black/40 border border-white/10 px-3 py-1 backdrop-blur-md hover:bg-copper hover:text-canvas transition-colors"
                       >
@@ -161,7 +161,7 @@ export function Projects() {
                       <a
                         href={project.demo}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                         className="rounded-full bg-copper/20 border border-copper/40 px-3 py-1 backdrop-blur-md hover:bg-copper hover:text-canvas transition-colors"
                       >
